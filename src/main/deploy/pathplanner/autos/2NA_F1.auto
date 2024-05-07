@@ -1,0 +1,107 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.7558586820190268,
+      "y": 4.396930547010606
+    },
+    "rotation": -60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "WRS_INTPOSE"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "WRS_SHOPOSE"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "SHOOT"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "WRS_INTPOSE"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "2NA_V1_P1"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "2NA_V1_P2"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "WRS_SHOPOSE"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "SHOOT"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "REPOSO"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "2NA_V1_P3"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

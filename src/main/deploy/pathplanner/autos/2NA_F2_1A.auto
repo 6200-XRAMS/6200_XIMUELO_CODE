@@ -1,0 +1,100 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.7411589680322218,
+      "y": 6.672985231684749
+    },
+    "rotation": 60.0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "WRS_INTPOSE"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "WRS_SHOPOSE"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "SHOOT"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "2NA_V2_P1"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "2NA_V2_P2"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "WRS_SHOPOSE"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "SHOOT"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "2NA_V2_P3"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "2NA_V2_P4"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "REPOSO"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

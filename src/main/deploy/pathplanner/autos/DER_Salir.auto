@@ -1,0 +1,25 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.49488007547443663,
+      "y": 4.081193076671868
+    },
+    "rotation": 0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "DER_LINEA"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "Autos Simples",
+  "choreoAuto": false
+}

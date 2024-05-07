@@ -1,0 +1,132 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.3679858486729504,
+      "y": 5.53650223579517
+    },
+    "rotation": 0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "WRS_INTPOSE"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "WRS_SHOPOSE"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "SHOOT"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "WRS_INTPOSE"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "3NA_V1_P1"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "3NA_V1_P2"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "WRS_SHOPOSE"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "SHOOT"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "WRS_INTPOSE"
+                }
+              },
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "3NA_V1_P3"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "3NA_V1_P4"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "WRS_SHOPOSE"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "SHOOT"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "folder": null,
+  "choreoAuto": false
+}

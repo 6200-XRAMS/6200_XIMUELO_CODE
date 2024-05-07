@@ -1,0 +1,50 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 1.3158097173337204,
+      "y": 5.535411299394028
+    },
+    "rotation": 0
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "WRS_INTPOSE"
+          }
+        },
+        {
+          "type": "parallel",
+          "data": {
+            "commands": [
+              {
+                "type": "named",
+                "data": {
+                  "name": "WRS_SHOPOSE"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "SHOOT"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "REPOSO"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "Autos Simples",
+  "choreoAuto": false
+}
